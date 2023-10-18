@@ -1,0 +1,13 @@
+version: '3'
+
+services:
+  web1:
+    image: nginx:alpine  # Use the nginx image
+    ports:
+      - "8080:80"  # Map host port 8080 to container port 80
+
+  web2:
+    image: nginx:alpine  # Use the nginx image
+    ports:
+      - "8081:80"  # Map host port 8081 to container port 80
+
